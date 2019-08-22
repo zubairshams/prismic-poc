@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import NotFound from './views/NotFound.vue'
 import Preview from './views/Preview.vue'
 import Tutorial from './views/Tutorial.vue'
+import Home from './views/Home.vue'
 
 Vue.use(Router)
 
@@ -11,7 +12,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: { name: 'tutorial' }
+      component: Home
     },
     {
       path: '/not-found',
